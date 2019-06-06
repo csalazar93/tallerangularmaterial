@@ -21,6 +21,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatPaginatorModule } from '@angular/material';
 import {MatInputModule} from '@angular/material';
 
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+
 
 import 'hammerjs';
 import { PrincipalComponent } from './components/principal/principal.component';
@@ -46,7 +48,8 @@ import { PrincipalComponent } from './components/principal/principal.component';
     MatTableModule,
     MatFormFieldModule,
     MatPaginatorModule,
-    MatInputModule
+    MatInputModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
