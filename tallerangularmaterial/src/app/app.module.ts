@@ -16,6 +16,11 @@ import {MatListModule} from '@angular/material/list';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatCardModule} from '@angular/material/card';
 
+import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatPaginatorModule } from '@angular/material';
+import {MatInputModule} from '@angular/material';
+
 
 import 'hammerjs';
 import { PrincipalComponent } from './components/principal/principal.component';
@@ -37,7 +42,11 @@ import { PrincipalComponent } from './components/principal/principal.component';
     MatTooltipModule,
     MatListModule,
     MatSnackBarModule,
-    MatCardModule
+    MatCardModule,
+    MatTableModule,
+    MatFormFieldModule,
+    MatPaginatorModule,
+    MatInputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
