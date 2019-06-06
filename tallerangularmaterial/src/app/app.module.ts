@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material';
+import {MatSidenavModule} from '@angular/material/sidenav'
+
+import 'hammerjs';
 
 
 @NgModule({
@@ -16,7 +19,8 @@ import {MatButtonModule} from '@angular/material';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
