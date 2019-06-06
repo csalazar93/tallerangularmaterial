@@ -1,7 +1,26 @@
 <!--<button mat-raised-button color="primary">Primary</button>-->
 
 <mat-drawer-container class="example-container" [hasBackdrop]="true">    
-  <mat-drawer #drawer [mode]="side">I'm a drawer</mat-drawer>    <mat-drawer-content>
-  <button mat-raised-button (click)="drawer.toggle()">Toggle drawer</button>    
+  <mat-drawer #drawer [mode]="side">
+    I'm a drawer
+  </mat-drawer>    <mat-drawer-content>
+  <!--button mat-raised-button (click)="drawer.toggle()">
+    Toggle drawer
+  </button>-->
+  <mat-toolbar color="primary">
+      <mat-toolbar-row>
+          <button (click)="drawer.toggle()" matTooltip="Mostrar barra lateral" color="primary" mat-flat-button aria-label="toggle sidebar">
+              <mat-icon>dehaze</mat-icon>
+          </button>
+          <span>Angular Material</span>
+          <span class="example-spacer"></span>
+          <button color="primary" matTooltip="Ver notificaciones" mat-flat-button aria-label="toggle sidebar">
+              <mat-icon>error</mat-icon>
+          </button>
+          <button color="primary" matTooltip="Más acciones" mat-flat-button aria-label="toggle sidebar">
+              <mat-icon>more_vert</mat-icon>
+          </button>
+      </mat-toolbar-row>
+  </mat-toolbar>    
   </mat-drawer-content></mat-drawer-container>
-  
+
